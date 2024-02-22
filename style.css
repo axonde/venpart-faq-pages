@@ -704,6 +704,7 @@ scrollbar-width: none; /* Firefox */}
 	.faq__item {padding: 26px 14px;}
 	.faq__item--text-wrapper {width: 100%; margin-bottom: 110px;}
 	.faq__item--image, .faq__item:nth-child(2n) .faq__item--image {top: calc(100% - 85px); left: calc(50% - 165px);}
+	.faq__item::after {display: none;}
 }
 
 
