@@ -609,7 +609,10 @@ scrollbar-width: none; /* Firefox */}
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-} .faq__item a {
+} 
+.faq__item--text-name span svg {transition: .3s var(--animation);}
+.faq__item--text-name:hover span svg {transform: translateX(5px);}
+.faq__item a {
 	font: 700 24px 'Montserrat';
 	color: #fff;
 	text-decoration: underline;}
@@ -709,6 +712,11 @@ scrollbar-width: none; /* Firefox */}
 @media (min-width: 956px) and (max-width: 1100px) {
 	.faq__item--image img {min-width: 310px; min-height: 100%;}
 	.faq__item--image {width: 310px; right: -5px;}
+	.faq__item:nth-child(2n) .faq__item--image {left: -20px;}
+	.faq__item:nth-child(2n) .faq__item--text-wrapper {width: calc(100% - 320px);}
+}
+@media (min-width: 1100px) and (max-width: 1150px) {
+	.faq__item:nth-child(2n) .faq__item--image {left: -20px;}
 }
 @media (max-width: 360px) {
 	.faq__item--image, .faq__item:nth-child(2n) .faq__item--image {max-width: 100%; width: 100%; left: calc(50% - 50%);}
