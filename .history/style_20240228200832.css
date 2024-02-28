@@ -573,23 +573,25 @@ scrollbar-width: none; /* Firefox */}
 	left: 35px;
 	z-index: -1;}
 .faq__item:nth-child(2n)::after {
+	/* content: url('decorations/decoration-1.svg'); */
 	background: url('decorations/decoration-2.svg');
 	width: 356px;
 	height: 287px;
-	/* top: 80%; */
+	top: 80%;
 	left: initial;
 	right: 50px;}
 .faq__item:nth-child(3n)::after {
 	background: url('decorations/decoration-3.svg');
 	width: 356px;
 	height: 287px;
-	/* top: 80%; */
-	left: 80px;}
+	top: 80%;
+	left: 195px;}
 .faq__item:nth-child(4n)::after {
 	background: url('decorations/decoration-4.svg');
 	width: 280px;
 	height: 239px;
-	right: 60px;}
+	top: 80%;
+	left: 60%;}
 .faq__item:last-child::after {display: none;}
 
 .faq__item--wrapper {position: relative; display: flex;}
@@ -653,11 +655,20 @@ scrollbar-width: none; /* Firefox */}
 		font: 14px 'Inter';}
 	.faq__item::after {
 		transform: scale(0.7);
-    bottom: -190px;
+    top: 60%;
     left: 27px;}
-	.faq__item:nth-child(2n)::after {right: 45px;}
-	.faq__item:nth-child(3n)::after {left: 95px;}
-	.faq__item:nth-child(4n)::after {left: initial; right: 20px; bottom: -175px;}
+	.faq__item:nth-child(2n)::after {
+		transform: scale(0.7);
+		top: 80%;
+		right: 50px;}
+	.faq__item:nth-child(3n)::after {
+		transform: scale(0.7);
+		top: 65%;
+		left: 195px;}
+	.faq__item:nth-child(4n)::after {
+		transform: scale(0.7);
+		top: 80%;
+		left: 60%;}
 
 		.faq__item--text-wrapper {
 			max-width: 378px;

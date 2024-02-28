@@ -657,7 +657,7 @@ scrollbar-width: none; /* Firefox */}
     left: 27px;}
 	.faq__item:nth-child(2n)::after {right: 45px;}
 	.faq__item:nth-child(3n)::after {left: 95px;}
-	.faq__item:nth-child(4n)::after {left: initial; right: 20px; bottom: -175px;}
+	.faq__item:nth-child(4n)::after {left: initial; right: 20px; bottom: -180px;}
 
 		.faq__item--text-wrapper {
 			max-width: 378px;
