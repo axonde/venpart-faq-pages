@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const documentationBlocks = document.querySelectorAll('.documentation-block');
+  const documentationBlocks = document.querySelectorAll('.faq__item');
 
   function showDocumentationBlocks() {
     documentationBlocks.forEach(block => {
